@@ -1,0 +1,35 @@
+<div class="formulario">
+  <h6 class="mt-15px position-absolute">Moneda:</h6>
+  <mat-tab-group>
+    <!-- contenido dolar -->
+    <mat-tab class="formulariosSegunMoneda" label="$">
+      <form>
+        <div class="contenedorItems alingEnd mt-20px">
+          <div class="mt-4">
+            <h6>Categoría:</h6>
+          </div>
+          <div class="mt-4">
+                <mat-radio-group aria-label="Select an option">
+                  <mat-radio-button class="museoSans500 mr-5" value="1">Particular</mat-radio-button>
+                  <mat-radio-button class="museoSans500 mr-5" value="2">Carga liviana</mat-radio-button>
+                </mat-radio-group>
+          </div>
+        </div>
+        <div class="mt-4">
+          <app-slider [(rangoSeleccionado)]="datosParaCotizar.valor" [nombreSlider]="sliderValorVehiculo.nombre" [rangoMinimo]="sliderValorVehiculo.rangoMin" [rangoMaximo]="sliderValorVehiculo.rangoMax" [step]="1000"></app-slider>
+        </div>
+        <div class="mt-4">
+          <app-slider [(rangoSeleccionado)]="datosParaCotizar.anio" [nombreSlider]="sliderAnio.nombre" [rangoMinimo]="sliderAnio.rangoMin" [rangoMaximo]="sliderAnio.rangoMax"></app-slider>
+        </div>
+        <div class="mt-4">
+          <app-slider [(rangoSeleccionado)]="datosParaCotizar.prima" [nombreSlider]="sliderPrima.nombre" [rangoMinimo]="sliderPrima.rangoMin" [rangoMaximo]="sliderPrima.rangoMax"></app-slider>
+        </div>
+        <div class="mt-4">
+          <app-slider [(rangoSeleccionado)]="datosParaCotizar.meses" [nombreSlider]="sliderPlazoMeses.nombre" [rangoMinimo]="sliderPlazoMeses.rangoMin" [rangoMaximo]="sliderPlazoMeses.rangoMax"></app-slider>
+        </div>
+      </form>
+    </mat-tab>
+    <!-- contenido colones -->
+    <mat-tab class="formulariosSegunMoneda" label="₡"> Content 2 </mat-tab>
+  </mat-tab-group>
+</div>

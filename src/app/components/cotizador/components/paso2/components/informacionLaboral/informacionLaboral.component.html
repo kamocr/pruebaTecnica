@@ -1,0 +1,41 @@
+<div class="ml-3 lateralResumen">
+  <div class="titulo">
+    <div class="row">
+      <div class="col-6">
+        <h2>Información laboral</h2>
+      </div>
+      <div class="col-6 justifyContentEnd pr-5">
+        <h2>Cotización: {{numeroCotizacion}}</h2>
+      </div>
+    </div>
+  </div>
+  <div class=" ml-3 datosResumen">
+    <div class="mt-4">
+      <div class="contenedorItems alingEnd mt-20px">
+        <div class="mt-4">
+          <h6>Tipo de Ingreso:</h6>
+        </div>
+        <div class="mt-4">
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button class="museoSans500 mr-5" value="1">Asalariado</mat-radio-button>
+            <mat-radio-button class="museoSans500 mr-5" value="2">Independiente</mat-radio-button>
+            <mat-radio-button class="museoSans500 mr-5" value="3">Mixto</mat-radio-button>
+          </mat-radio-group>
+        </div>
+      </div>
+      <div class="formulario">
+        <h6 class="mt-15px position-absolute">Moneda:</h6>
+        <mat-tab-group>
+          <!-- contenido dolar -->
+          <mat-tab class="formulariosSegunMoneda" label="$">
+            <app-moneda></app-moneda>
+          </mat-tab>
+          <!-- contenido colones -->
+          <mat-tab class="formulariosSegunMoneda" label="₡">
+            <app-moneda></app-moneda>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</div>

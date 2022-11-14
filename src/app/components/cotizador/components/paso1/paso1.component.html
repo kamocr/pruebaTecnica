@@ -1,0 +1,26 @@
+<app-loading *ngIf="isLoading"></app-loading>
+<div *ngIf="!isLoading" class="row mt-60px">
+  <!-- datos para cotizar -->
+  <div class="col-lg-6">
+    <div class="titulo">
+      <h2>Datos para cotizar su <b>vehículo</b></h2>
+    </div>
+    <div class="contenido ml-35px pl-0">
+      <app-datosParaCotizar [datosApi]="dataApi" [(datosParaCotizar)]="datosParaCotizar"></app-datosParaCotizar>
+    </div>
+
+  </div>
+  <!-- fin datos cotizar -->
+  <!-- resumen -->
+  <div class="col-lg-6">
+    <div class="ml-3 lateralResumen">
+      <div class="titulo">
+        <h2>Resumen del financiamiento</h2>
+      </div>
+      <div class=" ml-3 datosResumen">
+        <app-resumenFinanciero [datosApi]="dataApi" [datosParaCotizar]="datosParaCotizar"></app-resumenFinanciero>
+      </div>
+    </div>
+  </div>
+  <!-- fin resumen -->
+</div>

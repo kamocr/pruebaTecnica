@@ -1,0 +1,29 @@
+<!-- <div class="row"> -->
+  <div class="contenedorItems alingEnd">
+    <h6>{{nombreSlider}}</h6>
+    <div class="contenedorItems">
+      <div>
+        <button class="btnAction" (click)="btnAction('resta')">-</button>
+      </div>
+      <div>
+        <div>
+          <input [(ngModel)]="rangoSeleccionado " [ngClass]="{'error':rangoSeleccionado<rangoMinimo}" class="inputNumber m-2" type="text">
+        </div>
+      </div>
+      <div>
+        <button class="btnAction" (click)="btnAction('suma')">+</button>
+      </div>
+    </div>
+  </div>
+
+  <p *ngIf="rangoSeleccionado<rangoMinimo" style="margin-top:-5px" class="errorTxt justifyContentEnd">El monto digitado no es correcto</p>
+  <div class="left55px" [ngClass]="{'mtError':rangoSeleccionado<rangoMinimo,'mtNoError':rangoSeleccionado>=rangoMinimo}">
+      <mat-slider
+      [max]="rangoMaximo"
+      [min]="rangoMinimo"
+      (change)="onChange()"
+      [step]="step"
+      [(ngModel)]="rangoSeleccionado">
+      </mat-slider>
+    </div>
+

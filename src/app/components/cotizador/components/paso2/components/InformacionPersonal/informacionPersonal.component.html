@@ -1,0 +1,65 @@
+<div>
+  <div class="titulo">
+    <h2>Información personal</h2>
+  </div>
+  <div class="contenido ml-35px pl-0">
+    <div class="contenedorItems alingEnd mt-20px">
+      <div class="mt-4">
+        <h6>Tipo de Identificación:</h6>
+      </div>
+      <div class="mt-4">
+            <mat-radio-group aria-label="Select an option">
+              <mat-radio-button class="museoSans500 mr-5" value="1">Nacional</mat-radio-button>
+              <mat-radio-button class="museoSans500 mr-5" value="2">Dimex</mat-radio-button>
+            </mat-radio-group>
+      </div>
+    </div>
+    <form [formGroup]="informacionPersonal">
+      <!-- cedula -->
+      <div class="row mt-5">
+        <div class="col-4 mt-3">
+          <h6>Cédula:</h6>
+        </div>
+        <div class="col-8 justifyContentEnd">
+          <mat-form-field>
+            <input style="width: 400px;" placeholder="99-9999-9999" matInput>
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- nombre completo -->
+      <div class="row mt-5">
+        <div class="col-4 mt-3">
+          <h6>Nombre Completo:</h6>
+        </div>
+        <div class="col-8 justifyContentEnd">
+          <mat-form-field>
+            <input style="width: 400px;" placeholder="Nombre Completo" matInput>
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- celular -->
+      <div class="row mt-5">
+        <div class="col-4 mt-3">
+          <h6>Celular:</h6>
+        </div>
+        <div class="col-8 justifyContentEnd">
+          <mat-form-field>
+            <input style="width: 400px;" placeholder="9999-9999" matInput>
+          </mat-form-field>
+        </div>
+      </div>
+      <!-- correo -->
+      <div class="row mt-5">
+        <div class="col-4 mt-3">
+          <h6>Correo Electrónico:</h6>
+        </div>
+        <div class="col-8 justifyContentEnd">
+          <mat-form-field>
+            <input style="width: 400px;" placeholder="correo@correo.com" matInput>
+          </mat-form-field>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</div>

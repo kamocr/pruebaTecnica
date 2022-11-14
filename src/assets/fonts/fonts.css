@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('fonts/Museo_Sans/Museo\ Sans\ 100\ Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Museo Sans 100';
+  src: url('fonts/Museo_Sans/MuseoSans_100.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Museo Sans 100', italic;
+  src: url('fonts/Museo_Sans/MuseoSans_100_Italic.otf') format('opentype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url('fonts/Museo_Sans/MuseoSans_300.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Museo Sans 300', italic;
+  src: url('fonts/Museo_Sans/MuseoSans_300_Italic.otf') format('opentype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Museo Sans 500';
+  src: url('fonts/Museo_Sans/MuseoSans_500.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Museo Sans Italic 500', italic;
+  src: url('fonts/Museo_Sans/MuseoSans_500_Italic.otf') format('opentype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Museo Sans 700';
+  src: url('fonts/Museo_Sans/MuseoSans_700.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Museo Sans 700', italic;
+  src: url('fonts/Museo_Sans/MuseoSans_700_Italic.otf') format('opentype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Museo Sans 900';
+  src: url('fonts/Museo_Sans/MuseoSans_900.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Museo Sans 900', italic;
+  src: url('fonts/Museo_Sans/MuseoSans_900_Italic.otf') format('opentype');
+  font-style: italic;
+}
+

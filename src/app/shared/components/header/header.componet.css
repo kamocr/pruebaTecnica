@@ -1,0 +1,24 @@
+.logo {
+  z-index: 99;
+  margin-top: 2%;
+  margin-left: 75px;
+}
+.img-logo{
+  width: 300px!important;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.origami {
+  width: 20%;
+  height: auto;
+  z-index: 0;
+  top: 0;
+  left: 80%;
+}
+
+.logo,.origami{
+  position: absolute;
+}

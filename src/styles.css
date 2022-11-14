@@ -1,0 +1,323 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.circulo {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #69BE28;
+  padding: 3px;
+}
+/* color del loading */
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #00693C;
+}
+/* color del :checked */
+.mat-checkbox-checkmark-path {
+  stroke: #ffffff !important;
+}
+/* background del :checked */
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background{
+  background-color: #00693C;
+}
+/* ajustamos el tamanio de aceptar t y c */
+.mat-checkbox-inner-container-no-side-margin{
+  width: 31px!important;
+  height: 28px!important;
+}
+.mat-checkbox-inner-container{
+  width: 25px!important;
+  height: 25px!important;
+}
+a,a:hover{
+  color: #69BE28;
+  text-decoration: underline;
+  text-decoration-color: #69BE28!important;
+}
+/* eliminar bordes a la botonera activa */
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard, .mat-button-toggle-group-appearance-standard{
+  border: none;
+}
+/* eliminamos el borde izquierdo */
+.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+  border-left: none;
+}
+/* cuando esta activado */
+.mat-button-toggle-checked.mat-button-toggle-appearance-standard{
+  border: 0!important;
+  background-color: #63CECA;
+}
+.mat-button-toggle-button .mat-button-toggle-checked {
+  /* border: none; */
+  border: 1px solid #63CECA!important;
+  /* border-radius: 10px; */
+}
+/* cuando no hay ninguno activado bordes */
+.mat-button-toggle-button{
+  border: 1px solid #00693C!important;
+  border-radius: 10px;
+}
+/* cuando no hay ninguno activado bordes */
+.mat-button-toggle-appearance-standard{
+  background-color: #FFFFFF;
+  border: #00693C;
+  color: #69BE28;
+  border-radius: 10px;
+}
+/* alineaciones */
+.contenedorItems{
+  display: flex;
+}
+.txtAlingEnd{
+  text-align: end;
+}
+.txtAlingCenter{
+  text-align: center!important;
+}
+.alingEnd{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.heigth600px{
+  height: 600px!important;
+}
+.justifyContentEnd{
+  display: flex!important;
+  justify-content: flex-end!important;
+}
+.justifyContentCenter{
+  display: flex!important;
+  justify-content: center!important;
+}
+.mb--5px{
+  margin-bottom: -5px;
+}
+.mb--12px{
+  margin-bottom: -12px!important;
+}
+.ml-230px{
+  margin-left: 430px;
+}
+.ml-35px{
+  margin-left: 35px;
+}
+.pl80px{
+  padding-left: 80px!important;
+}
+/* fin alineaciones */
+.museoSans900{
+  font-family: 'Museo Sans 900'!important;
+  font-size: 25px!important;
+}
+.museoSans900-30px{
+  font-family: 'Museo Sans 900'!important;
+  font-size: 30px!important;
+}
+.museoSans300{
+  font-family: 'Museo Sans 300'!important;
+  font-size: 20px!important;
+}
+.museoSans700{
+  font-family: 'Museo Sans 700'!important;
+  font-size: 30px!important;
+}
+.museoSans500{
+  font-family: 'Museo Sans 500'!important;
+  font-size: 20px!important;
+}
+
+.mat-h6, .mat-typography .mat-h6, .mat-typography h6 {
+  font-family: 'Museo Sans 500'!important;
+  font-size: 25px!important;
+  color:#00693C
+}
+
+.mat-stepper-horizontal-line {
+  border-left: 30px solid #898b8c!important;
+  border-top: 15px solid transparent!important;
+  border-bottom: 15px solid transparent!important;
+  margin: 0!important;
+  flex: none!important;
+}
+.mat-horizontal-stepper-header {
+  height: 93px!important;
+  padding: 0 24px;
+}
+
+.mat-step-icon {
+  height: 45px!important;
+  width: 45px!important;
+}
+.mat-step-icon-content {
+  font-size: 39px;
+  font-weight: 500;
+  color: #69be28;
+}
+.mat-step-header .mat-step-icon {
+  background-color: transparent;
+}
+.mat-step-header .mat-step-icon-selected {
+  background-color: #69be28!important;
+  color: #fff!important;
+  margin-right: 0!important;
+}
+.mat-step-header .mat-step-icon-selected > .mat-step-icon-content {
+  color: #fff!important;
+}
+.mat-step-label {
+  position: absolute;
+  bottom: 0;
+  font-size: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #00693c;
+}
+.mat-step-label-active {
+  color: #69be28!important;
+}
+.mat-stepper-horizontal, .mat-stepper-vertical {
+  background-color: #fff;
+}
+.mat-horizontal-stepper-header-container {
+  justify-content: center;
+}
+.mat-horizontal-content-container {
+  padding: 0 75px 24px!important;
+}
+.mat-tab-label-content {
+  color: #69be28;
+  font-weight: 900;
+  font-size: 24px;
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #69be28;
+}
+.mat-tab-label {
+  border-bottom: 1px solid rgba(0,0,0,.12)!important;
+}
+.mat-tab-labels {
+  justify-content: flex-end;
+}
+h6{
+  color: #00693c;
+  font-weight: 500!important;
+}
+mat-radio-group {
+  color: #69be28;
+  font-weight: 500;
+}
+mat-radio-button {
+  margin-right: 5px;
+}
+
+/* cambiamos el color del texto cuando esta seleccionado */
+.mat-radio-checked .mat-radio-label-content{
+  color: #69BE28;
+}
+.mat-radio-label-content{
+  color:#8B9384;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #69be28;
+}
+/* color cuando el radio esta seleccionado */
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+  background-color: #00693c;
+  width: 30px!important;
+  height: 30px!important;
+}
+/* color del borde del radio sin seleccionar */
+.mat-checkbox-frame, .mat-radio-outer-circle {
+  border-color: #8B9384;
+}
+/* ajustamos el tamanio del radio */
+.mat-radio-outer-circle{
+  width: 30px!important;
+  height: 30px!important;
+}
+/* acomodamos el margen */
+.mat-radio-container{
+  margin-right: 15px!important;
+  margin-bottom: 15px!important;
+}
+.mat-radio-persistent-ripple, .mat-radio-disabled .mat-radio-container:hover .mat-radio-persistent-ripple{
+  opacity: none;
+}
+/* tamanio */
+
+.mat-slider-horizontal .mat-slider-track-fill,.mat-slider-horizontal .mat-slider-track-background,.mat-slider-horizontal .mat-slider-track-wrapper{
+height: 15px!important;
+}
+/* slider cargado */
+.mat-slider.mat-accent .mat-slider-thumb, .mat-slider.mat-accent .mat-slider-thumb-label {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 21px;
+  opacity: 1;
+  background:#00693C 0% 0% no-repeat padding-box!important;
+  transform: none!important;
+}
+.mat-slider.mat-accent .mat-slider-track-fill, .mat-slider.mat-accent .mat-slider-thumb, .mat-slider.mat-accent .mat-slider-thumb-label {
+  background: #63CECA 0% 0% no-repeat padding-box;
+  border-radius: 21px;
+  opacity: 1;
+}
+/* silder fondo */
+.mat-slider-track-background {
+  /* background-color: rgb(11 71 241 / 30%)!important; */
+  background: #898B8C4D 0% 0% no-repeat padding-box!important;
+  border-radius: 21px!important;
+  opacity: 1!important;
+  transform: none!important;
+}
+/* cuando no esta seleccionado */
+.mat-slider.mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
+  /* border-color: rgb(173 0 0)!important; */
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 21px;
+  opacity: 1;
+  background:#00693C 0% 0% no-repeat padding-box!important;
+  /* transform: none!important; */
+}
+/* circulo slider*/
+.mat-slider-thumb {
+  width: 32px!important;
+  height: 32px!important;
+  bottom: -22px!important;
+  right: -16px!important;
+}
+/* largor del side */
+.mat-slider-horizontal {
+  width: 679px;
+}
+
+.mat-stroked-button:not(.mat-button-disabled) {
+  border: 1px solid #898B8C!important;
+border-radius: 8px!important;
+}
+/* borde del inpput del mas */
+.mat-form-field-appearance-fill .mat-form-field-underline::before {
+  background-color: #12191d!important;
+}
+.mat-form-field-wrapper{
+  width: 95px;
+}
+/* en paso 2, color del placeholder del inputs */
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  color: #30302EBF;
+  text-align: center;
+}
+/* en paso 2, el underline de los inputs */
+.mat-form-field-appearance-legacy .mat-form-field-underline,.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #00693C;
+}
+.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label, .mat-form-field-appearance-legacy.mat-form-field-can-float .mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label{
+  display: none;
+}
+.mat-form-field-wrapper{
+  width: 400px;
+}

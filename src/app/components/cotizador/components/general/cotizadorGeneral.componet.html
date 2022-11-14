@@ -1,0 +1,16 @@
+<mat-stepper #stepper>
+  <!-- paso1 -->
+  <mat-step label="Cotizador" [completed]="false">
+    <app-cotizador-paso1></app-cotizador-paso1>
+  </mat-step>
+  <!-- paso2 -->
+  <mat-step  label="Informacion" [completed]="false">
+    <app-cotizador-paso2></app-cotizador-paso2>
+  </mat-step>
+  <!-- paso3 -->
+  <mat-step  label="Documentos" [completed]="false">
+  </mat-step>
+  <!-- paso4 -->
+  <mat-step  label="Preaprobacion" [completed]="false">
+  </mat-step>
+</mat-stepper>

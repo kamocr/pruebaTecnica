@@ -1,0 +1,109 @@
+<div class="row">
+  <div class="col-12">
+    <div class="table-responsive heigth600px">
+      <!-- deuda -->
+      <table class="mb--5px table">
+        <thead>
+          <tr>
+            <th><h6 class="mb--12px">Deuda total:</h6></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- monto a financiar -->
+          <tr>
+            <td class="pl80px museoSans300">+ Monto a financiar <sup class="circulo">i</sup></td>
+            <td class="museoSans500 txtAlingEnd">{{this.resumenFinanciero.montoFinanciar | currency:'USD'}}</td>
+          </tr>
+          <!-- comision -->
+          <tr>
+            <td class="pl80px museoSans300">+ Comisión ({{this.porcentajeComision}}%)</td>
+            <td class="museoSans500 txtAlingEnd">{{this.resumenFinanciero.comision| currency:'USD'}}</td>
+          </tr>
+          <!-- Total a financiamiento -->
+          <tr>
+            <td class="museoSans900 pl80px">Total a financiar:</td>
+            <td class="museoSans700 txtAlingEnd"><span>{{this.resumenFinanciero.totalFinanciar| currency:'USD'}}</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Cuota mensual total: -->
+      <table class="mb--5px table">
+        <thead>
+          <tr>
+            <th><h6 class="mb--12px">Cuota mensual total:</h6></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- cuota del prestamo -->
+          <tr>
+            <td class="pl80px museoSans300">+ Cuota del préstamo</td>
+            <td class="museoSans500 txtAlingEnd">{{this.resumenFinanciero.cuotaPrestamo| currency:'USD'}}</td>
+          </tr>
+          <!-- seguro obligatorio -->
+          <tr>
+            <td class="pl80px museoSans300">+ Seguro de vehículo obligatorio</td>
+            <td class="museoSans500 txtAlingEnd">{{this.resumenFinanciero.seguroVehiculoObligatorio| currency:'USD'}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Seguros opcionales: -->
+      <table class="mb--5px table">
+        <thead>
+          <tr>
+            <th><h6 class="mb--12px">Seguros opcionales:</h6></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- seguro 6 meses -->
+          <tr>
+            <td>
+              <mat-radio-group [(ngModel)]="isSeguro6">
+                <mat-radio-button value="{{true}}" class="museoSans300 ml-35px">
+                  Seguro de desempleo con cobertura a 6 meses
+                </mat-radio-button>
+              </mat-radio-group>
+            </td>
+
+            <td class="museoSans500 txtAlingEnd">{{this.resumenFinanciero.seguroOpcional6| currency:'USD'}}</td>
+          </tr>
+            <!-- seguro 12 meses -->
+          <tr>
+            <td>
+              <mat-radio-group [(ngModel)]="isSeguro6">
+                <mat-radio-button value="{{false}}" class="museoSans300 ml-35px">
+                  Seguro de desempleo con cobertura a 12 meses
+                </mat-radio-button>
+              </mat-radio-group>
+            </td>
+            <td class="museoSans500 txtAlingEnd">{{resumenFinanciero.seguroOpcional12| currency:'USD'}}</td>
+          </tr>
+          <!-- seguro de vida -->
+          <tr>
+            <td>
+              <mat-checkbox class="museoSans300 ml-35px" [(ngModel)]="seguroVida">Seguro de vida</mat-checkbox>
+            </td>
+            <td class="museoSans500 txtAlingEnd">{{this.resumenFinanciero.seguroVida| currency:'USD'}}</td>
+          </tr>
+          <!-- Total -->
+          <tr>
+            <td class="justifyContentEnd"> <button class="btnDetalleCuotas mr-5">Ver detalle de cuotas</button><span class="museoSans900">Total:</span></td>
+            <td class="museoSans900-30px txtAlingEnd"><span>{{this.resumenFinanciero.total| currency:'USD'}}</span></td>
+          </tr>
+          <!-- monto a desembolsar -->
+          <tr>
+            <td class="museoSans300 justifyContentEnd">Monto a desembolsar:</td>
+            <td class="museoSans700 txtAlingEnd"><span>{{this.resumenFinanciero.montoDesembolsar| currency:'USD'}}</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="justifyContentCenter">
+      <p class="txtAlingCenter" style="width: 555px;">* Los valores de esta cotización son únicamente de referencia y pueden variar según las condiciones de mercado.</p>
+    </div>
+    <div class="justifyContentCenter">
+      <button class="btnDescargar">Descargar / Enviar Cotización</button>
+      <div class="clearfix m-3"></div>
+      <button class="btnIniciar" mat-button matStepperNext>Iniciar Preaprobación</button>
+    </div>
+  </div>
+</div>
